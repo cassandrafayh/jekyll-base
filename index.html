@@ -1,6 +1,15 @@
 ---
 layout: default
 title: Home Page
+fruit:
+ - title: Peach
+   description: Juicy peaches are the best!
+ - title: Strawberry
+   description: Strawberry season is the best season!
+ - title: Blueberry
+   description: Blueberries are full of antioxidents!
+ - title: Mango
+   description: Mangos taste like Summer in a fruit!
 ---
 
 <h1>Welcome to your home page!</h1>
@@ -15,8 +24,29 @@ title: Home Page
 
 
 <section>
+    
+    {% for item in page.fruit %}
     <div class="card"> 
         <h2> Peach </h2>
         <p> Juicy peaches are the best! </p>
     </div>
+    {% endfor %}
+    
+    <!-- <div class="card"> 
+        <h2> Peach </h2>
+        <p> Juicy peaches are the best! </p>
+    </div>
+     <div class="card"> 
+        <h2> Strawberry </h2>
+        <p> Strawberry season is the best season! </p>
+    </div>
+     <div class="card"> 
+        <h2> Blueberry </h2>
+        <p> Blueberries are full of antioxidents! </p>
+    </div>
+     <div class="card"> 
+        <h2> Mango </h2>
+        <p> Mangos taste like Summer in a fruit! </p>
+    </div> -->
+
 </section>
