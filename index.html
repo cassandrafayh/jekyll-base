@@ -27,8 +27,8 @@ fruit:
     
     {% for item in page.fruit %}
     <div class="card"> 
-        <h2> Peach </h2>
-        <p> Juicy peaches are the best! </p>
+        <h2> {{item.title}} </h2>
+        <p> {{item.description}} </p>
     </div>
     {% endfor %}
     
